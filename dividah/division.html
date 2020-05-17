@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Division Only Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Adding JS to our page -->
+    <!-- Embedded
+    Adding JS directly through the script tag
+  -->
+    <script type="text/javascript">
+    </script>
+    <!-- External
+    Adding JS using an external script sheet through the script tag
+    using the src attribute
+  -->
+    <!-- You can either add JS on the head section or before the close of the body depending on
+    your specification
+  -->
+
+
+  <!-- it would not be wise to put your JS in the head if you need the HTML to be loaded first -->
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row">
+          <!--large,medium,small,xs-->
+        <div class="col-md-8">
+          <br>
+          <!-- let us add an alert here -->
+          <div class="alert alert-secondary" role="alert">
+            Dividing your numbers :)
+          </div>
+
+          <!-- we need two form inputs -->
+          <div class="" id="num1Div">
+            <label for="num1">First Number</label>
+            <input type="number" name="num1" id="num1" value="" class="form-control">
+            <span style='display:none;' id="num1Error" class="text-danger"> <i class="fas fa-bomb "></i> </span>
+          </div>
+
+          <div class="form-group">
+            <label for="num2">Second Number</label>
+            <input type="number" name="num2" id="num2" value="" class="form-control">
+            <span style='display:none;' id="num2Error" class="text-danger"> <i class=" "></i> </span>
+          </div>
+
+          <button id="divide-them" class="btn btn-primary" name="divide-them" type="button" name="button" onclick="divideThem()">
+           <i class="fas fa-divide "></i>  Divide Them!
+          </button>
+        </div>
+        <br>
+
+        <div class="col-md-4">
+          <br>
+          <div class="alert alert-success" role="alert">
+           <i class="fas fa-smile"></i>  Results
+          </div>
+          <h4 class='text-primary' id="results"></h4>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" charset="utf-8"></script>
+
+
+    <!--exernal script-->
+
+    </script>
+    <script src="division.js" charset="utf-8"></script>
+  </body>
+</html>
